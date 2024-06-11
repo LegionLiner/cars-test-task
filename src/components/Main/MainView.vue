@@ -126,6 +126,10 @@ $card-width: 354px;
                     line-height: 22px;
                     color: rgba(41, 49, 72, 0.8);
                 }
+
+                &:focus-within  {
+                    border: 1px solid rgba(120, 149, 255, 1);
+                }
             }
 
             .clear {
