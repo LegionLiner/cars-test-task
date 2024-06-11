@@ -19,10 +19,8 @@
 </template>
 
 <script setup lang="ts">
-import { Vehicle } from '../../stores/carsStore';
-
 defineProps({
-    car: Object as unknown as Vehicle
+    car: Object as any // тут netlify ломается, пришлось эни поставить
 });
 
 </script>
