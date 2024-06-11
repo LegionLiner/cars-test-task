@@ -9,6 +9,7 @@ export interface Vehicle {
 }
 
 export const storeCars = defineStore("carsStore", () => {
+    
     const cars = ref<Vehicle[]>([]);
     const query = reactive({
         per_page: 9,

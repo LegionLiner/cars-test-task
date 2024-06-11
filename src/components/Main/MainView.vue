@@ -31,8 +31,11 @@
                 </UIButton>
             </div>
         </div>
-        <div class="main__view__content">
+        <div v-if="carsStore.cars.length" class="main__view__content">
             <VechicleCard v-for="car in carsStore.cars" :key="car.vin" :car="car"></VechicleCard>
+        </div>
+        <div v-else class="main__view__content no-cars">
+            <p>No cars found</p>
         </div>
     </div>
 </template>
@@ -172,6 +175,12 @@ $card-width: 354px;
 
         @media (width < 1080px) {
             grid-template-columns: repeat(1, $card-width);
+        }
+
+        &.no-cars {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
         }
     }
 }
