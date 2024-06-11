@@ -178,6 +178,7 @@ $card-width: 354px;
         }
 
         &.no-cars {
+            grid-template-columns: repeat(1, $card-width) !important;
             text-align: center;
             font-size: 22px;
             font-weight: 700;
