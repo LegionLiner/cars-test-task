@@ -40,7 +40,7 @@ defineProps({
 
     img {
         width: -webkit-fill-available;
-        height: 135px;
+        height: 165px;
     }
 
     .card__info {
