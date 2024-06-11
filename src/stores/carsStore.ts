@@ -36,6 +36,7 @@ export const storeCars = defineStore("carsStore", () => {
                     cars.value = res.data;
                     lastPage.value = res.meta.last_page;
                     total.value = res.meta.total;
+                    query.page = 1;
                 });
         }
     }
